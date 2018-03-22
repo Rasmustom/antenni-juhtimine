@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: open_manipulator_with_tb3
+Description: Description of open_manipulator_with_tb3
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/devel/lib 
+Requires: std_msgs

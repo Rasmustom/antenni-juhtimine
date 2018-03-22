@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/install
+
+Name: open_manipulator_dynamixel_ctrl
+Description: Description of open_manipulator_dynamixel_ctrl
+Version: 0.0.0
+Cflags: -I/home/rasmus/catkin_ws/install/include
+Libs: -L/home/rasmus/catkin_ws/install/lib -lopen_manipulator_dynamixel_ctrl
+Requires: roscpp std_msgs dynamixel_sdk dynamixel_workbench_toolbox open_manipulator_msgs

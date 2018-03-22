@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: ros_tutorials_action
+Description: Description of ros_tutorials_action
+Version: 0.0.0
+Cflags: -I/home/rasmus/catkin_ws/devel/include -I/usr/include
+Libs: -L/home/rasmus/catkin_ws/devel/lib -lros_tutorials_action /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: actionlib actionlib_msgs roscpp rospy std_msgs

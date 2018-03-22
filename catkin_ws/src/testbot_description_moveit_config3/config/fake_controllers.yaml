@@ -1,0 +1,7 @@
+controller_list:
+  - name: fake_leg_controller
+    joints:
+      - joint1
+  - name: fake_dish_controller
+    joints:
+      - joint2

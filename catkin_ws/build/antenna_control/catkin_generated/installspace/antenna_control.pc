@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/install
+
+Name: antenna_control
+Description: Description of antenna_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/install/lib 
+Requires: 

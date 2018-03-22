@@ -1,0 +1,2 @@
+set(open_manipulator_msgs_MESSAGE_FILES "/home/rasmus/catkin_ws/src/open_manipulator/open_manipulator_msgs/msg/JointPose.msg;/home/rasmus/catkin_ws/src/open_manipulator/open_manipulator_msgs/msg/KinematicsPose.msg")
+set(open_manipulator_msgs_SERVICE_FILES "/home/rasmus/catkin_ws/src/open_manipulator/open_manipulator_msgs/srv/GetJointPose.srv;/home/rasmus/catkin_ws/src/open_manipulator/open_manipulator_msgs/srv/GetKinematicsPose.srv")

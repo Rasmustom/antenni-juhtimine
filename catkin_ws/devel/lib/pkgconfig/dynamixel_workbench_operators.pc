@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: dynamixel_workbench_operators
+Description: Description of dynamixel_workbench_operators
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/devel/lib -ldynamixel_workbench_operators
+Requires: roscpp dynamixel_workbench_msgs

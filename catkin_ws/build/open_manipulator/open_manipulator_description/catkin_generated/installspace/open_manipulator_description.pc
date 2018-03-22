@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/install
+
+Name: open_manipulator_description
+Description: Description of open_manipulator_description
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/install/lib 
+Requires: roscpp std_msgs

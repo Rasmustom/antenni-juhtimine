@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/install
+
+Name: dynamixel_workbench_controllers
+Description: Description of dynamixel_workbench_controllers
+Version: 0.2.0
+Cflags: -I/home/rasmus/catkin_ws/install/include
+Libs: -L/home/rasmus/catkin_ws/install/lib -ldynamixel_workbench_controllers
+Requires: roscpp dynamixel_workbench_msgs dynamixel_workbench_toolbox

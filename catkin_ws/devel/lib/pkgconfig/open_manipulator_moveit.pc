@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: open_manipulator_moveit
+Description: Description of open_manipulator_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/devel/lib 
+Requires: 

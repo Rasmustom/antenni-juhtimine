@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: testbot_description_moveit_config3
+Description: Description of testbot_description_moveit_config3
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/rasmus/catkin_ws/devel
+
+Name: antenna_control_monitor
+Description: Description of antenna_control_monitor
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rasmus/catkin_ws/devel/lib 
+Requires: 
