@@ -1,0 +1,17 @@
+{"name": "ESTCUBE 1", "catalog_number": 39161}
+{"name": "CELTEE 1", "catalog_number": 41850}
+{"name": "ALSAT 1N", "catalog_number": 41789}
+{"name": "AL-FARABI 1", "catalog_number": 42016}
+{"name": "AEROCUBE 7C", "catalog_number": 43043}
+{"name": "ISS", "catalog_number": 25544}
+{"name": "AALTO-1", "catalog_number": 42775}
+{"name": "AEROCUBE 8D", "catalog_number": 41852}
+{"name": "ASTERIA", "catalog_number": 43020}
+{"name": "ANTELSAT", "catalog_number": 40034}
+{"name": "COMPASS-1", "catalog_number": 32787}
+{"name": "DIAMOND GREEN", "catalog_number": 42785}
+{"name": "CUBEBUG-1", "catalog_number": 39153}
+{"name": "CICERO 6", "catalog_number": 42793}
+{"name": "DUTHSAT", "catalog_number": 42724}
+{"name": "AUUSAT-1", "catalog_number": 32788}
+{"name": "DELFI-C3", "catalog_number": 32789}
