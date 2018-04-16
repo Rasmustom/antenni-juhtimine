@@ -10,9 +10,8 @@ import json
 import tle_getter_node
 import ephem
 
-def doesSatellitePass(tle):
-	tle_lines = tle.split('\n')
-	tle_lines[0] = tle_lines[0][2:]
+def doesSatellitePass(tle, catalog_number):
+	tle_lines = tle[2:].split('\n')
 	obs = ephem.Observer()
 	obs.lat = '59.394870'
 	obs.long = '24.661399'
@@ -21,7 +20,7 @@ def doesSatellitePass(tle):
 	try:
 		print(obs.next_pass(satellite))
 	except ValueError as e:
-		print("Satellite is never above horizon")
+		print("Satellite with catalog number {} is never above horizon".format(catalog_number))
 		return False
 	else:
 		return True
@@ -35,24 +34,22 @@ def addSatelliteToTrack(catalog_number):
 			f.write("{}".format(catalog_number))
 
 def callback(data):
+	catalog_number = data.data
 	st = SpaceTrackClient('rasmustomsen@hotmail.com', '!kK!Ft3-W6sKGa8X')
-	tle = st.tle_latest(norad_cat_id=data.data, ordinal=1, format='3le').encode("utf-8")
+	tle = st.tle_latest(norad_cat_id=catalog_number, ordinal=1, format='3le').encode("utf-8").strip()
 	print(tle)
-	if not (tle.strip() == ""):
+	if not (tle == ""):
 		print(data)
-		if (doesSatellitePass(tle)):
-			addSatelliteToTrack(data.data)
+		if (doesSatellitePass(tle, catalog_number)):
+			addSatelliteToTrack(catalog_number)
 			tle_getter_node.formatTle(tle)
 	else:
-		print("Wrong Catalog Number")
+		print("{}: Wrong Catalog Number".format(catalog_number))
 
 def chooseSatellite():
 	rospy.init_node('satellite_chooser')
 	rospy.Subscriber('satellite_chooser', Int64, callback)
 	rospy.spin()
 
-def main():
-	chooseSatellite()
-
 if __name__ == '__main__':
-	main()
+	chooseSatellite()
