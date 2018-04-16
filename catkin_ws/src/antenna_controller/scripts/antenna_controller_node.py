@@ -28,6 +28,7 @@ class AntennaController():
 		self.pub2 = ""
 		self.last_move_direction = 0
 		self.is_stopped = False
+		self.is_zenith = False
 		self.local = time.time()
 
 	def runProgram(self):
@@ -61,6 +62,8 @@ class AntennaController():
 		print("CHECK FOR SECONDS: {}".format(time.time() - self.local))
 
 	def checkTime(self):
+		if (is_stopped):
+			return
 		if (len(self.passes[0]) > 0):
 			for line in open('/home/rasmus/catkin_ws/src/antenna_controller/tle/current_satellite.txt','r').readlines():
 				if not (int(line) == self.passes[0][0][4]):
@@ -250,16 +253,16 @@ def main():
 	# Kui algselt tööle panna, siis ei peaks ta alati samale poole minema, vaid vaatama hetke asukoha järgi, kummale poole mõislikum liikuda on.
 	# Üldiselt pean rohkem kontrollima antenni hetke asukohta ja selle abil otsustama, kummale poole liikuda. Ilmselt suurem osa
 	# ajast saan kasutada sama loogikat, et liigu vastupidi eelmisele, kuid on olukordi, mil see viis ei tööta ja antenn võib 
-	# hakata potentsiaalselt liikuma praktiliselt ringiratast. 
+	# hakata potentsiaalselt liikuma praktiliselt ringiratast.  - Ei saa enne teha, kui tean reaalset antenni andmeid
 
-	# Teha tle küsimine sagedasemaks. Nt, iga paari tunni tagant
+	# Teha tle küsimine sagedasemaks. Nt, iga paari tunni tagant +
 
 	# Mida teha taldrikuga. Hetkel on ulemine asend 0 ja vahemik on -pi/2 - +pi/2. Siiamaani teinud nii, et lahutan pi/2, aga nii saan
-	# alati ainult [hele poole liikuda
+	# alati ainult [hele poole liikuda ?
 
-	# Seniidis
+	# Seniidis - 1-3 h
 
-	# Refactor - Loo mingi osa funktsioone lahku
+	# Refactor - Loo mingi osa funktsioone lahku - 1h
 
 
 if __name__ == '__main__':
