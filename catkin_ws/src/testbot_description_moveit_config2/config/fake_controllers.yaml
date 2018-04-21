@@ -1,5 +1,0 @@
-controller_list:
-  - name: fake_antenna_controller
-    joints:
-      - joint1
-      - joint2
