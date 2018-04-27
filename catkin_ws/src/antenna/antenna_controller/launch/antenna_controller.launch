@@ -3,7 +3,8 @@
   <node pkg="antenna_controller" name="tle_getter_node" type="tle_getter_node.py" output="screen"/>
   <!-- Uncomment if node is ready -->
   <!-- <node pkg="antenna_controller" name="satellite_chooser_node" type="satellite_chooser_node.py" output="screen"/> -->
-  <!-- <node pkg="antenna_controller" name=""/> -->
-  <node pkg="antenna_controller" name="antenna_controller_node" type="antenna_controller_node.py" output="screen"/>
+  <!-- <node pkg="antenna_controller" name="antenna_controller_node" type="antenna_controller_node.py" output="screen"/> -->
+  <node pkg="antenna_controller" name="antenna_position_publisher_node" type="antenna_position_publisher_node.py" output="screen"/>
+  <node pkg="antenna_controller" name="satellite_tracker_node" type="satellite_tracker_node.py" output="screen"/>
 
 </launch>

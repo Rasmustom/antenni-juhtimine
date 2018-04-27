@@ -49,6 +49,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Antenna_command.msg
+  Antenna_position.msg
 )
 
 ## Generate services in the 'srv' folder
