@@ -17,6 +17,9 @@ class AntennaController():
 
     def callback(self, data):
         self.moveAntennaGazebo(data.leg_angle, data.dish_angle)
+        with open('/home/rasmus/catkin_ws/src/antenna/antenna_controller/tle/acc_vel_ang.csv', 'a') as f:
+            f.write("{},{},{},{},{},{}".format(data.leg_linear_acceleration, data.leg_linear_velocity, data.dish_linear_acceleration, data.dish_linear_velocity, data.leg_angle, data.dish_angle))
+            f.write("\n")
         print("PUBLISHED DATA: \n{}".format(data))
 
     def subscribe(self):

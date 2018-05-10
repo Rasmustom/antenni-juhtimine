@@ -50,6 +50,7 @@ add_message_files(
   FILES
   Antenna_command.msg
   Antenna_position.msg
+  Weather_information.msg
 )
 
 ## Generate services in the 'srv' folder
